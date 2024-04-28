@@ -1,10 +1,9 @@
 import Back from "@/components/icons/Back";
-import { Step1 } from "@/components/Register/Step1";
-import { Step2 } from "@/components/Register/Step2";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { StepComponent } from "./_components/StepComponent";
+import { Final } from "./_components/final";
 
 export default function Register({
   searchParams: { step = "1" },
@@ -14,6 +13,11 @@ export default function Register({
   };
 }) {
   const progress = Number(step) * 25;
+
+  if (step === "4") {
+    return <Final />;
+  }
+
   return (
     <div className="container h-full w-full">
       <div className="mt-[46px] mb-[30px] flex justify-center">
@@ -27,7 +31,7 @@ export default function Register({
             <Separator />
           </div>
           <StepComponent step={step} />
-          {!step || step !== "1" ? (
+          {step !== "1" ? (
             <Link
               className="flex mt-8 gap-2 font-semibold"
               href={`/register?page=${Number(step) - 1}`}
