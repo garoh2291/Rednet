@@ -26,7 +26,7 @@ const FormSchema = z.object({
   }),
 });
 
-export const Step2: React.FC = () => {
+export const Pin: React.FC = () => {
   const router = useRouter();
 
   const form = useForm<z.infer<typeof FormSchema>>({

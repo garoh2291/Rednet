@@ -1,5 +1,5 @@
 import Image from "next/image";
 
 export default function Home() {
-  return <div>sd</div>;
+  return <div className="container">Dashboard</div>;
 }

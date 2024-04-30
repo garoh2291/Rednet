@@ -8,7 +8,6 @@ export default function Header() {
       <div className="container h-full">
         <div className="flex items-center h-full justify-between">
           <Link href="/">
-            {/* <img src={Logo} alt="logo" /> */}
             <Logo />
           </Link>
           <nav>

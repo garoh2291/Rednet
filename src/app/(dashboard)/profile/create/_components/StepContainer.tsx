@@ -1,13 +1,11 @@
 "use client";
 
-import { Step1 } from "@/components/Register/Step1";
-import { Pin } from "@/components/Register/Step2";
-import { Step3 } from "@/components/Register/Step3";
+import { Step1 } from "@/components/Profile/Step1";
+import { Step2 } from "@/components/Profile/Step2";
 
 const steps = {
   "1": <Step1 />,
-  "2": <Pin />,
-  "3": <Step3 />,
+  "2": <Step2 />,
 };
 
 export const StepComponent = ({ step = "1" }: { step: string }) => {

@@ -42,7 +42,15 @@ export const Final: React.FC = () => {
             See all the new features we’ve added
             <br /> through our tutorial.
           </p>
-          <Button className="mt-4 px-10 py-6">Պրոֆայլի ստեղծում</Button>
+          <Button
+            className="mt-4 px-10 py-6"
+            onClick={() => {
+              handleOpen();
+              router.push("/profile/create");
+            }}
+          >
+            Պրոֆայլի ստեղծում
+          </Button>
           <Button
             variant={"link"}
             className="py-0"

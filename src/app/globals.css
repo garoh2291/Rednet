@@ -86,6 +86,6 @@
   }
 
   .container {
-    @apply w-full 2xl:mx-auto px-4 xl:px-[120px] lg:px-12 2xl:max-w-[1239px] max-w-full;
+    @apply w-full 2xl:mx-auto px-4 xl:px-[120px] lg:px-12 2xl:max-w-[1400px] max-w-full;
   }
 }
