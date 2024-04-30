@@ -25,7 +25,7 @@ export default function Header() {
                 <Link href="/">Menu item</Link>
               </li>{" "}
               <li>
-                <Link href="/">Menu item</Link>
+                <Link href="/profile">Profile</Link>
               </li>
               <li>
                 <Link href="/register">
