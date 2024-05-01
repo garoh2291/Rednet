@@ -13,10 +13,10 @@ export default function Header() {
           <nav>
             <ul className="flex items-center gap-8 font-normal ">
               <li>
-                <Link href="/">Menu item</Link>
+                <Link href="/auction">New Auction</Link>
               </li>
               <li>
-                <Link href="/">Menu item</Link>
+                <Link href="/tender">New Tender</Link>
               </li>{" "}
               <li>
                 <Link href="/">Menu item</Link>

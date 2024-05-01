@@ -4,7 +4,10 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
+  DialogDescription,
   DialogFooter,
+  DialogHeader,
+  DialogTitle,
 } from "@/components/ui/dialog";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -12,7 +15,11 @@ import { useCallback, useState } from "react";
 import Welcome from "@/assets/welcome.png";
 import { Button } from "@/components/ui/button";
 
-export const Final: React.FC = () => {
+interface IProps {
+  type: string;
+}
+
+export const Success: React.FC<IProps> = ({ type }) => {
   const [open, setOpen] = useState<boolean>(true);
   const router = useRouter();
 
@@ -32,31 +39,31 @@ export const Final: React.FC = () => {
         </div>
         <div className="text-center flex items-center gap-6 flex-col">
           <h2 className="text-title-active text-[48px] font-bold">
-            Բարի գալուստ
-            <br /> Rednet
+            Հայտարարությունը <br /> ստեղծված է
           </h2>
           <p className="text-body font-normal">
-            See all the new features we’ve added
-            <br /> through our tutorial.
+            Շնորհավորում ենք ձեր
+            <br /> հայտարարությունը բարեհաջող <br />
+            ստեղծվել է
           </p>
           <Button
             className="mt-4 px-10 py-6"
             onClick={() => {
               handleOpen();
-              router.push("/profile/create");
+              router.push("/");
             }}
           >
-            Պրոֆայլի ստեղծում
+            Տեսնել հայտարարությունը
           </Button>
           <Button
             variant={"link"}
             className="py-0"
             onClick={() => {
               handleOpen();
-              router.push("/");
+              router.push(`/${type}`);
             }}
           >
-            Բաց թողնել
+            Ավելացնել հայտարարություն
           </Button>
         </div>
 
