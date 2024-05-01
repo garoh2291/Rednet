@@ -3,7 +3,7 @@ import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { StepComponent } from "./_components/StepComponent";
-import { Final } from "./_components/Final";
+import { Final } from "@/components/organism/Modals/Final";
 
 export default function Register({
   searchParams: { step = "1" },
