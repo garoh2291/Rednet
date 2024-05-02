@@ -13,10 +13,6 @@ export default function Auction({
 }) {
   const progress = Number(step) * 40;
 
-  //   if (step === "4") {
-  //     return <Final />;
-  //   }
-
   return (
     <div className="container h-full w-full">
       <div className="mt-[46px] mb-[30px] flex justify-center">

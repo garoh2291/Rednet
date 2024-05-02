@@ -1,5 +1,22 @@
-import Image from "next/image";
+import { AuctionWrapper } from "@/components/organism/AuctionWrapper/AuctionWrapper";
 
-export default function Home() {
-  return <div className="container">Dashboard</div>;
+export default function Home({
+  searchParams: { type = "auction" },
+}: {
+  searchParams: {
+    type?: string;
+    priceGte?: string;
+    priceLte?: string;
+    category?: string;
+    deadline?: string;
+    publisher?: string;
+  };
+}) {
+  console.log(type);
+
+  return type === "auction" ? (
+    <AuctionWrapper />
+  ) : (
+    <div className="container">Dashboard</div>
+  );
 }

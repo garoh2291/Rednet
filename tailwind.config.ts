@@ -39,6 +39,9 @@ const config = {
           "background: linear-gradient(114.44deg, #EB0055 0%, #FFFA80 100%);",
         "main-bg": "url('/bg-main.png')",
       },
+      boxShadow: {
+        main: " 0px 0px 20px 1px #DFE2E44D",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

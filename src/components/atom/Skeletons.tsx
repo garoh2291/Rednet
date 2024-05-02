@@ -11,3 +11,16 @@ export const ServiceSkeleton: React.FC = () => {
     </div>
   );
 };
+
+export const AuctionItemSkeleton: React.FC = () => {
+  return (
+    <div className="w-[275px]  border border-[#D6D8E7] rounded-[8px]">
+      <Skeleton className="h-[180px] w-full" />
+      <div className="p-4 space-y-2">
+        <Skeleton className="h-4 w-[200px]" />
+        <Skeleton className="h-4 w-[150px]" />
+        <Skeleton className="h-4 w-[100px]" />
+      </div>
+    </div>
+  );
+};
