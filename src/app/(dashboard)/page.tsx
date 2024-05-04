@@ -1,7 +1,8 @@
 import { AuctionWrapper } from "@/components/organism/AuctionWrapper/AuctionWrapper";
+import { TenderWrapper } from "@/components/organism/TenderWrapper/TenderWrapper";
 
 export default function Home({
-  searchParams: { type = "auction" },
+  searchParams: { type = "auction", ...params },
 }: {
   searchParams: {
     type?: string;
@@ -10,13 +11,14 @@ export default function Home({
     category?: string;
     deadline?: string;
     publisher?: string;
+    search?: string;
   };
 }) {
   console.log(type);
 
   return type === "auction" ? (
-    <AuctionWrapper />
+    <AuctionWrapper search={params.search} />
   ) : (
-    <div className="container">Dashboard</div>
+    <TenderWrapper />
   );
 }

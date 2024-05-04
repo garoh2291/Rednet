@@ -6,7 +6,11 @@ import useFetch from "@/lib/hooks/useFetch";
 import { getAuctions } from "@/lib/services/auctions";
 import { IAuction } from "@/mocks/Auctions";
 
-export const Dashboard: React.FC = () => {
+interface DashboardProps {
+  search?: string;
+}
+
+export const Dashboard: React.FC<DashboardProps> = ({ search }) => {
   const {
     data: { auctions, total },
     loading,
@@ -14,15 +18,13 @@ export const Dashboard: React.FC = () => {
     data: { auctions: IAuction[]; total: number };
     loading: boolean;
   } = useFetch({
-    apiCallback: () => getAuctions(),
+    apiCallback: () => getAuctions(search),
     initialValue: {
       auctions: [],
       total: 0,
     },
-    dependencies: [],
+    dependencies: [search],
   });
-
-  console.log(auctions, total, loading);
 
   if (loading) {
     return (
@@ -35,7 +37,7 @@ export const Dashboard: React.FC = () => {
   }
 
   return (
-    <div className="flex-1 flex flex-wrap gap-5">
+    <div className=" flex flex-wrap gap-5">
       {(auctions as IAuction[]).map((auction) => (
         <AuctionItem key={auction.id} auction={auction} />
       ))}

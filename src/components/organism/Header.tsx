@@ -19,10 +19,10 @@ export default function Header() {
                 <Link href="/tender">New Tender</Link>
               </li>{" "}
               <li>
-                <Link href="/">Menu item</Link>
+                <Link href="/">Auction</Link>
               </li>{" "}
               <li>
-                <Link href="/">Menu item</Link>
+                <Link href="/?type=tender">Tender</Link>
               </li>{" "}
               <li>
                 <Link href="/profile">Profile</Link>

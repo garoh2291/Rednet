@@ -3,6 +3,7 @@ import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { StepComponent } from "./_components/StepContainer";
+import { Success } from "@/components/organism/Modals/Success";
 
 export default function Auction({
   searchParams: { step = "1" },
@@ -13,10 +14,14 @@ export default function Auction({
 }) {
   const progress = Number(step) * 40;
 
+  if (step === "3") {
+    return <Success type="tender" />;
+  }
+
   return (
     <div className="container h-full w-full">
       <div className="mt-[46px] mb-[30px] flex justify-center">
-        <div className="min-w-[560px] max-w-[950px]  min-h-[600px] bg-white rounded-[24px] p-[60px]">
+        <div className="max-w-[560px] w-full  min-h-[600px] bg-white rounded-[24px] p-[60px]">
           <div className="mb-8">
             <Progress value={progress} />
             <div className="mt-3 mb-[25px] flex items-center gap-3">

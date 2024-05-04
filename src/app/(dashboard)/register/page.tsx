@@ -3,7 +3,9 @@ import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { StepComponent } from "./_components/StepComponent";
-import { Final } from "@/components/organism/Modals/Final";
+import dynamic from "next/dynamic";
+
+const Final = dynamic(() => import("@/components/organism/Modals/Final"));
 
 export default function Register({
   searchParams: { step = "1" },

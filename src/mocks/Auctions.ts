@@ -50,7 +50,7 @@ export const AUCTION_MOCKS = [
   },
   {
     id: 2,
-    name: "2014 AUDI Q5 PREMIUM",
+    name: "2013 AUDI Q5 PREMIUM",
     subDescription: "A breif 40min hiking trip through the alps.",
     // create startDate with date and time  to be random date between today and 15 of may make it random not equal to other auctions
     // end date is 1 hour after start date

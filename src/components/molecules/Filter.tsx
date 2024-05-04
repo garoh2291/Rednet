@@ -6,9 +6,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export const AuctionFilter: React.FC = () => {
+export const Filter: React.FC = () => {
   return (
-    <div className="w-[300px] min-h-[300px] bg-white shadow-main rounded-[7px] p-4">
+    <div className="w-[300px] min-h-[260px] bg-white shadow-main rounded-[7px] p-4">
       <Accordion type="multiple">
         <AccordionItem value="item-1">
           <AccordionTrigger>Category</AccordionTrigger>

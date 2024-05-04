@@ -3,12 +3,13 @@ import Image from "next/image";
 import Watch from "../icons/Watch";
 import { Separator } from "../ui/separator";
 import Bell from "../icons/Bell";
+import Link from "next/link";
 
 interface IAuctionItemProps {
   auction: IAuction;
 }
 
-const calculateTime = (startDate: Date, endDate: Date) => {
+export const calculateTime = (startDate: Date = new Date(), endDate?: Date) => {
   // if startDate is greater than date now , calculate time left  as day , hour , minute, if day or hour or minute is 0, don't show it
 
   if (new Date(startDate) > new Date()) {
@@ -40,9 +41,9 @@ const calculateTime = (startDate: Date, endDate: Date) => {
     );
   }
 
-  if (new Date(endDate) > new Date()) {
+  if (new Date(endDate as Date) > new Date()) {
     const differenceInMilliseconds =
-      new Date(endDate).getTime() - new Date().getTime();
+      new Date(endDate as Date).getTime() - new Date().getTime();
 
     const differenceInSeconds = Math.floor(differenceInMilliseconds / 1000);
     const seconds = differenceInSeconds % 60; // Seconds remaining after extracting minutes
@@ -68,7 +69,7 @@ const calculateTime = (startDate: Date, endDate: Date) => {
     );
   }
 
-  const final = new Date(endDate).toLocaleDateString("en-US", {
+  const final = new Date(endDate as Date).toLocaleDateString("en-US", {
     day: "numeric",
     month: "short",
     year: "numeric",
@@ -118,7 +119,10 @@ const checkStatusButton = (startDate: Date, endDate: Date, bid?: number) => {
 
 export const AuctionItem: React.FC<IAuctionItemProps> = ({ auction }) => {
   return (
-    <div className="w-[275px] min-h-[372px] border border-[#D6D8E7] rounded-[8px]">
+    <Link
+      href={`/auction/${auction.id}`}
+      className="w-[275px] min-h-[372px] border border-[#D6D8E7] rounded-[8px]"
+    >
       <div className="w-full h-[140px] rounded-tr-[8px] rounded-tl-[8px] relative">
         <Image
           src={auction.images[0]}
@@ -140,6 +144,6 @@ export const AuctionItem: React.FC<IAuctionItemProps> = ({ auction }) => {
         </div>
         {checkStatusButton(auction.startDate, auction.endDate, auction.lastBid)}
       </div>
-    </div>
+    </Link>
   );
 };

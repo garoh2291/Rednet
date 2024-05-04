@@ -1,12 +1,20 @@
 import { Dashboard } from "./Dashboard";
-import { AuctionFilter } from "./Filter";
+import { Filter } from "../../molecules/Filter";
+import { SearchSection } from "@/components/molecules/SearchSection";
 
-export const AuctionWrapper: React.FC = () => {
+interface AuctionWrapperProps {
+  search?: string;
+}
+
+export const AuctionWrapper: React.FC<AuctionWrapperProps> = ({ search }) => {
   return (
     <div className="container">
       <div className="flex gap-[33px] mt-8 items-start">
-        <AuctionFilter />
-        <Dashboard />
+        <Filter />
+        <div className="flex-1">
+          <SearchSection search={search} />
+          <Dashboard search={search} />
+        </div>
       </div>
     </div>
   );
