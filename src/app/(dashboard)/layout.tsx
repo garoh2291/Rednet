@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, "!overflow-auto")}>
-        <div className="bg-background w-full min-h-screen flex flex-col">
+        <div className="bg-background w-full min-h-screen flex flex-col pb-10">
           <Header />
           {children}
         </div>
