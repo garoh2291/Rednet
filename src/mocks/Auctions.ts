@@ -35,7 +35,7 @@ export const AUCTION_MOCKS = [
     endDate: new Date("2024-05-02T22:00:00.000Z"),
     lastBid: 129,
     location: "Yerevan",
-    category: "Category name",
+    category: "Classic & Collector Cars",
     description:
       "Location. Near the airport, Tahiti Village Resort & Spa is in Las Vegas's South of The Strip neighborhood and close to Bali Hai Golf Club. Additional area points of interest include Thomas and Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility.",
     images: [
@@ -57,9 +57,9 @@ export const AUCTION_MOCKS = [
     startDate: new Date("2024-05-04T12:35:00.000Z"),
     endDate: new Date("2024-05-04T13:35:00.000Z"),
 
-    lastBid: 129,
+    lastBid: 250,
     location: "Yerevan",
-    category: "Category name",
+    category: "Vintage Treasures",
     description:
       "Location. Near the airport, Tahiti Village Resort & Spa is in Las Vegas's South of The Strip neighborhood and close to Bali Hai Golf Club. Additional area points of interest include Thomas and Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility.",
     images: [
@@ -80,9 +80,9 @@ export const AUCTION_MOCKS = [
     startDate: new Date("2024-05-03T16:45:00.000Z"),
     // end date is 1 hour after start date
     endDate: new Date("2024-05-03T17:45:00.000Z"),
-    lastBid: 129,
+    lastBid: 900,
     location: "Yerevan",
-    category: "Category name",
+    category: "Luxury Lifestyles",
     description:
       "Location. Near the airport, Tahiti Village Resort & Spa is in Las Vegas's South of The Strip neighborhood and close to Bali Hai Golf Club. Additional area points of interest include Thomas and Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility.",
     images: [
@@ -102,9 +102,9 @@ export const AUCTION_MOCKS = [
     startDate: new Date("2024-05-05T22:15:00.000Z"),
     // end date is 1 hour after start date
     endDate: new Date("2024-05-05T23:15:00.000Z"),
-    lastBid: 129,
+    lastBid: 820,
     location: "Yerevan",
-    category: "Category name",
+    category: "Art Collectors' Corner",
     description:
       "Location. Near the airport, Tahiti Village Resort & Spa is in Las Vegas's South of The Strip neighborhood and close to Bali Hai Golf Club. Additional area points of interest include Thomas and Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility.",
     images: [
@@ -124,9 +124,9 @@ export const AUCTION_MOCKS = [
     startDate: new Date("2024-05-07T06:00:00.000Z"),
     // end date is 1 hour after start date
     endDate: new Date("2024-05-07T07:00:00.000Z"),
-    lastBid: 129,
+    lastBid: 0,
     location: "Yerevan",
-    category: "Category name",
+    category: "Tech & Gadgets",
     description:
       "Location. Near the airport, Tahiti Village Resort & Spa is in Las Vegas's South of The Strip neighborhood and close to Bali Hai Golf Club. Additional area points of interest include Thomas and Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility.",
     images: [
@@ -148,7 +148,7 @@ export const AUCTION_MOCKS = [
     endDate: new Date("2024-05-09T14:20:00.000Z"),
     lastBid: 129,
     location: "Yerevan",
-    category: "Category name",
+    category: "Home & Garden",
     description:
       "Location. Near the airport, Tahiti Village Resort & Spa is in Las Vegas's South of The Strip neighborhood and close to Bali Hai Golf Club. Additional area points of interest include Thomas and Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility.",
     images: [
@@ -168,9 +168,9 @@ export const AUCTION_MOCKS = [
     startDate: new Date("2024-05-11T18:45:00.000Z"),
     // end date is 1 hour after start date
     endDate: new Date("2024-05-11T19:45:00.000Z"),
-    lastBid: 129,
+    lastBid: 240,
     location: "Yerevan",
-    category: "Category name",
+    category: "Sports & Memorabilia",
     description:
       "Location. Near the airport, Tahiti Village Resort & Spa is in Las Vegas's South of The Strip neighborhood and close to Bali Hai Golf Club. Additional area points of interest include Thomas and Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility.",
     images: [
@@ -190,9 +190,9 @@ export const AUCTION_MOCKS = [
     startDate: new Date("2024-05-02T03:10:00.000Z"),
     // end date is 1 hour after start date
     endDate: new Date("2024-05-02T04:10:00.000Z"),
-    lastBid: 129,
+    lastBid: 1800,
     location: "Yerevan",
-    category: "Category name",
+    category: "Rare Finds",
     description:
       "Location. Near the airport, Tahiti Village Resort & Spa is in Las Vegas's South of The Strip neighborhood and close to Bali Hai Golf Club. Additional area points of interest include Thomas and Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility.",
     images: [
@@ -212,9 +212,9 @@ export const AUCTION_MOCKS = [
     startDate: new Date("2024-05-04T11:25:00.000Z"),
     // end date is 1 hour after start date
     endDate: new Date("2024-05-04T12:25:00.000Z"),
-    lastBid: 129,
+    lastBid: 450,
     location: "Yerevan",
-    category: "Category name",
+    category: "Automotive Alley",
     description:
       "Location. Near the airport, Tahiti Village Resort & Spa is in Las Vegas's South of The Strip neighborhood and close to Bali Hai Golf Club. Additional area points of interest include Thomas and Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility.",
     images: [
@@ -234,9 +234,9 @@ export const AUCTION_MOCKS = [
     startDate: new Date("2024-05-06T19:40:00.000Z"),
     // end date is 1 hour after start date
     endDate: new Date("2024-05-06T20:40:00.000Z"),
-    lastBid: 129,
+    lastBid: 729,
     location: "Yerevan",
-    category: "Category name",
+    category: "Books & Manuscripts",
     description:
       "Location. Near the airport, Tahiti Village Resort & Spa is in Las Vegas's South of The Strip neighborhood and close to Bali Hai Golf Club. Additional area points of interest include Thomas and Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility.",
     images: [
@@ -256,9 +256,9 @@ export const AUCTION_MOCKS = [
     startDate: new Date("2024-05-08T07:55:00.000Z"),
     // end date is 1 hour after start date
     endDate: new Date("2024-05-08T08:55:00.000Z"),
-    lastBid: 129,
+    lastBid: 610,
     location: "Yerevan",
-    category: "Category name",
+    category: "Music & Instruments",
     description:
       "Location. Near the airport, Tahiti Village Resort & Spa is in Las Vegas's South of The Strip neighborhood and close to Bali Hai Golf Club. Additional area points of interest include Thomas and Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility.",
     images: [
@@ -278,9 +278,9 @@ export const AUCTION_MOCKS = [
     startDate: new Date("2024-05-10T14:30:00.000Z"),
     // end date is 1 hour after start date
     endDate: new Date("2024-05-10T15:30:00.000Z"),
-    lastBid: 129,
+    lastBid: 529,
     location: "Yerevan",
-    category: "Category name",
+    category: "Fashion Forward",
     description:
       "Location. Near the airport, Tahiti Village Resort & Spa is in Las Vegas's South of The Strip neighborhood and close to Bali Hai Golf Club. Additional area points of interest include Thomas and Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility. Mack Center and the University of Nevada-Las Vegas. Property Features. Dining options at Tahiti Village Resort & Spa include a restaurant and a poolside bar. Recreational amenities include an outdoor pool, a spa tub, a sauna, and a fitness facility.",
     images: [

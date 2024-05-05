@@ -8,9 +8,17 @@ import { IAuction } from "@/mocks/Auctions";
 
 interface DashboardProps {
   search?: string;
+  category?: string;
+  priceGte?: string;
+  priceLte?: string;
 }
 
-export const Dashboard: React.FC<DashboardProps> = ({ search }) => {
+export const Dashboard: React.FC<DashboardProps> = ({
+  search,
+  category,
+  priceGte,
+  priceLte,
+}) => {
   const {
     data: { auctions, total },
     loading,
@@ -18,12 +26,12 @@ export const Dashboard: React.FC<DashboardProps> = ({ search }) => {
     data: { auctions: IAuction[]; total: number };
     loading: boolean;
   } = useFetch({
-    apiCallback: () => getAuctions(search),
+    apiCallback: () => getAuctions({ search, category, priceGte, priceLte }),
     initialValue: {
       auctions: [],
       total: 0,
     },
-    dependencies: [search],
+    dependencies: [search, category, priceGte, priceLte],
   });
 
   if (loading) {

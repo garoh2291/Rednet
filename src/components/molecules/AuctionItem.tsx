@@ -25,8 +25,8 @@ export const calculateTime = (startDate: Date = new Date(), endDate?: Date) => {
     const hours = differenceInHours % 24; // Hours remaining after extracting days
     const days = Math.floor(differenceInHours / 24);
 
-    const final = `${days ? `${days} d` : ""} ${hours ? `${hours} h` : ""} ${
-      minutes ? `${minutes} m` : ""
+    const final = `${days ? `${days}d` : ""} ${hours ? `${hours}h` : ""} ${
+      minutes ? `${minutes}m` : ""
     }`;
 
     return (
@@ -34,7 +34,7 @@ export const calculateTime = (startDate: Date = new Date(), endDate?: Date) => {
         <div className="text-title-active font-normal flex gap-1 items-center">
           <Watch /> Starting in:
         </div>
-        <div className="text-title-active flex items-end  text-[16px] font-semibold">
+        <div className="text-title-active flex items-end  text-[15px] font-semibold">
           {final}
         </div>
       </div>
@@ -53,8 +53,8 @@ export const calculateTime = (startDate: Date = new Date(), endDate?: Date) => {
     const hours = differenceInHours % 24; // Hours remaining after extracting days
     const days = Math.floor(differenceInHours / 24);
 
-    const final = `${days ? `${days} d` : ""} ${hours ? `${hours} h` : ""} ${
-      minutes ? `${minutes} m` : ""
+    const final = `${days ? `${days}d` : ""} ${hours ? `${hours}h` : ""} ${
+      minutes ? `${minutes}m` : ""
     }`;
 
     return (
@@ -62,7 +62,7 @@ export const calculateTime = (startDate: Date = new Date(), endDate?: Date) => {
         <div className="text-title-active font-normal flex gap-1 items-end">
           Time left:
         </div>
-        <div className="text-title-active flex items-end  text-[16px] font-semibold">
+        <div className="text-title-active flex items-end  text-[15px] font-semibold">
           {final}
         </div>
       </div>

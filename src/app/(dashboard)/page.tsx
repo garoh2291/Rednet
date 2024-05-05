@@ -14,11 +14,21 @@ export default function Home({
     search?: string;
   };
 }) {
-  console.log(type);
+  console.log(params);
 
   return type === "auction" ? (
-    <AuctionWrapper search={params.search} />
+    <AuctionWrapper
+      search={params.search}
+      category={params.category}
+      priceGte={params.priceGte}
+      priceLte={params.priceLte}
+    />
   ) : (
-    <TenderWrapper />
+    <TenderWrapper
+      search={params.search}
+      category={params.category}
+      priceGte={params.priceGte}
+      priceLte={params.priceLte}
+    />
   );
 }

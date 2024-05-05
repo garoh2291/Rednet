@@ -6,7 +6,19 @@ import { ITender } from "@/mocks/Tender";
 import { TenderItem } from "./TenderItem";
 import { TenderSkeleton } from "@/components/atom/Skeletons";
 
-export const TenderDashboard: React.FC = () => {
+interface TenderDashboardProps {
+  search?: string;
+  category?: string;
+  priceGte?: string;
+  priceLte?: string;
+}
+
+export const TenderDashboard: React.FC<TenderDashboardProps> = ({
+  search,
+  category,
+  priceGte,
+  priceLte,
+}) => {
   const {
     data: { tenders, total },
     loading,
@@ -14,12 +26,12 @@ export const TenderDashboard: React.FC = () => {
     data: { tenders: ITender[]; total: number };
     loading: boolean;
   } = useFetch({
-    apiCallback: () => getTenders(),
+    apiCallback: () => getTenders({ search, category, priceGte, priceLte }),
     initialValue: {
       tenders: [],
       total: 0,
     },
-    dependencies: [],
+    dependencies: [search, category, priceGte, priceLte],
   });
 
   if (loading) {

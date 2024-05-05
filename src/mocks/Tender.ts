@@ -4,6 +4,7 @@ export interface ITender {
   startDate: Date;
   endDate: Date;
   location: string;
+  lastBid: number;
   category: string;
   description: string;
 }
@@ -14,6 +15,7 @@ export const TENDER_MOCK: ITender[] = [
     name: "«Ճանապարհային դեպարտամենտ»",
     startDate: new Date("2024-05-20T22:15:00.000Z"),
     endDate: new Date("2024-05-20T23:15:00.000Z"),
+    lastBid: 1000,
     location: "Yerevan",
     category: "Մենեջմենտ",
     description:
@@ -24,6 +26,7 @@ export const TENDER_MOCK: ITender[] = [
     name: "«Ճանապարհային դեպարտամենտ»",
     startDate: new Date("2024-05-20T22:15:00.000Z"),
     endDate: new Date("2024-05-20T23:15:00.000Z"),
+    lastBid: 200,
     location: "Yerevan",
     category: "Մենեջմենտ",
     description:
@@ -34,6 +37,8 @@ export const TENDER_MOCK: ITender[] = [
     name: "«Ճանապարհային դեպարտամենտ»",
     startDate: new Date("2024-05-20T22:15:00.000Z"),
     endDate: new Date("2024-05-20T23:15:00.000Z"),
+    lastBid: 400,
+
     location: "Yerevan",
     category: "Մենեջմենտ",
     description:
@@ -44,6 +49,8 @@ export const TENDER_MOCK: ITender[] = [
     name: "«Ճանապարհային դեպարտամենտ»",
     startDate: new Date("2024-05-20T22:15:00.000Z"),
     endDate: new Date("2024-05-20T23:15:00.000Z"),
+    lastBid: 600,
+
     location: "Yerevan",
     category: "Մենեջմենտ",
     description:
@@ -54,6 +61,8 @@ export const TENDER_MOCK: ITender[] = [
     name: "«Ճանապարհային դեպարտամենտ»",
     startDate: new Date("2024-05-20T22:15:00.000Z"),
     endDate: new Date("2024-05-20T23:15:00.000Z"),
+    lastBid: 800,
+
     location: "Yerevan",
     category: "Մենեջմենտ",
     description:
