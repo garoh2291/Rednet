@@ -14,10 +14,8 @@ export const PriceFilter: React.FC = () => {
     [searchParams]
   );
 
-  const [priceFrom, setPriceFrom] = useState(
-    () => params.get("priceGte") || ""
-  );
-  const [priceTo, setPriceTo] = useState(() => params.get("priceLte") || "");
+  const [priceFrom, setPriceFrom] = useState(() => params.get("priceGte"));
+  const [priceTo, setPriceTo] = useState(() => params.get("priceLte"));
 
   const debouncedPriceFrom = useDebounce(priceFrom, 500);
   const debouncedPriceTo = useDebounce(priceTo, 500);
@@ -37,7 +35,7 @@ export const PriceFilter: React.FC = () => {
     <div className="w-full h-[57px] flex gap-1 items-center">
       <Input
         placeholder="From"
-        value={priceFrom}
+        value={priceFrom || ""}
         type="number"
         onChange={(e) => {
           setPriceFrom(e.target.value);
@@ -45,7 +43,7 @@ export const PriceFilter: React.FC = () => {
       />
       <Input
         placeholder="To"
-        value={priceTo}
+        value={priceTo || ""}
         type="number"
         onChange={(e) => {
           setPriceTo(e.target.value);
