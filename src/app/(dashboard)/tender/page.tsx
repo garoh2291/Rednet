@@ -21,7 +21,7 @@ export default function Tender({
   return (
     <div className="container h-full w-full">
       <div className="mt-[46px] mb-[30px] flex justify-center">
-        <div className="max-w-[560px] w-full  min-h-[600px] bg-white rounded-[24px] p-[60px]">
+        <div className="max-w-[712px] w-full  min-h-[600px] bg-white rounded-[24px] p-[60px]">
           <div className="mb-8">
             <Progress value={progress} />
             <div className="mt-3 mb-[25px] flex items-center gap-3">

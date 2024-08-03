@@ -42,6 +42,7 @@ const config = {
       boxShadow: {
         main: " 0px 0px 20px 1px #DFE2E44D",
         secondary: "0px 4px 40px 0px #3C88F71A",
+        "main-dark": " 0px 35px 40px 0px #0000000F",
       },
       colors: {
         border: "hsl(var(--border))",

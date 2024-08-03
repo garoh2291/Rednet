@@ -27,9 +27,8 @@ export default function AuctionItem({
             </Button>
           </Link>
         </div>
-        <CompanyDetails id={"1"} />
         <AuctionDetails id={params.id} />
-        <OtherAuctions id={params.id} />
+        <div></div>
       </div>
     </div>
   );

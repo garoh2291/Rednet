@@ -22,7 +22,10 @@ export const getAuctions = cache(
 
     if (search) {
       const regex = new RegExp(search, "i");
-      auctions = auctions.filter((auction) => regex.test(auction.name));
+      auctions = auctions.filter(
+        (auction) =>
+          auction.items.filter((item) => regex.test(item.name)).length > 0
+      );
     }
 
     if (category) {
@@ -35,13 +38,17 @@ export const getAuctions = cache(
 
     if (priceGte) {
       auctions = auctions.filter(
-        (auction) => auction.lastBid >= Number(priceGte)
+        (auction) =>
+          auction.items.filter((item) => item.lastBid >= Number(priceGte))
+            .length > 0
       );
     }
 
     if (priceLte) {
       auctions = auctions.filter(
-        (auction) => auction.lastBid <= Number(priceLte)
+        (auction) =>
+          auction.items.filter((item) => item.lastBid <= Number(priceGte))
+            .length > 0
       );
     }
 
