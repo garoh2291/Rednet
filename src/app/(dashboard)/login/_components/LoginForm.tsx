@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useRouter } from "next/navigation";
+import { useSession } from "@/lib/providers/AuthProvider";
+import { useLoginMutation } from "@/lib/api/auth";
 
 type FormData = {
   email: string;
@@ -33,6 +35,11 @@ const LoginSchema: ZodType<FormData, ZodTypeDef, FormData> = z.object({
 });
 
 export const LoginForm: React.FC = () => {
+  const { mutate } = useLoginMutation({
+    onSuccess: (data) => {
+      console.log("data", data);
+    },
+  });
   const router = useRouter();
   const form = useForm<z.infer<typeof LoginSchema>>({
     resolver: zodResolver(LoginSchema),
@@ -43,9 +50,13 @@ export const LoginForm: React.FC = () => {
   });
 
   const onSubmit = async (data: FormData) => {
-    console.log("SUCCESS", data);
+    const email = data.email;
+    const password = data.password;
 
-    router.push("/register?step=2");
+    console.log("data", data);
+    mutate({ email, password });
+
+    // router.push("/register?step=2");
   };
   return (
     <Form {...form}>

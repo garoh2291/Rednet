@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/organism/Header";
 import { cn } from "@/lib/utils";
+import { Providers } from "@/lib/providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, "!overflow-auto")}>
-        <div className="bg-background w-full min-h-screen flex flex-col pb-10">
-          <Header />
-          {children}
-        </div>
+        <Providers>
+          <div className="bg-background w-full min-h-screen flex flex-col pb-10">
+            <Header />
+            {children}
+          </div>
+        </Providers>
       </body>
     </html>
   );

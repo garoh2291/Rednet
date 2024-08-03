@@ -48,7 +48,7 @@ const FormSchema = z
       })
       .optional(),
   })
-  .refine((data) => {
+  .refine((data: any) => {
     if (data.type === "legal") {
       if (!data.avc) {
         return false;
@@ -190,7 +190,7 @@ export const Step3: React.FC = () => {
             disabled={!form.formState.isValid}
           >
             Շարունակել
-          </Button>{" "}
+          </Button>
         </form>
       </Form>
     </>

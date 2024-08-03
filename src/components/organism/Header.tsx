@@ -1,9 +1,16 @@
+"use client";
 import Link from "next/link";
 import Logo from "@/components/icons/Logo";
 import { Button } from "../ui/button";
+import { usePathname } from "next/navigation";
+
+const excludedPaths = ["/login", "/register"];
 
 export default function Header() {
-  return (
+  const pathName = usePathname();
+
+  const isExcluded = excludedPaths.includes(pathName);
+  return isExcluded ? null : (
     <div className="bg-white h-[80px] w-full">
       <div className="container h-full">
         <div className="flex items-center h-full justify-between">
