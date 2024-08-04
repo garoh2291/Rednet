@@ -79,23 +79,21 @@ export const calculateTime = (startDate: Date = new Date(), endDate?: Date) => {
     const hours = differenceInHours % 24; // Hours remaining after extracting days
     const days = Math.floor(differenceInHours / 24);
 
-    const {
-      days: finalDays,
-      hours: finalHours,
-      minutes: finalMinutes,
-      seconds: finalSeconds,
-    } = CountdownComponent({
-      days,
-      hours,
-      minutes,
-      seconds,
-    });
+    // const {
+    //   days: finalDays,
+    //   hours: finalHours,
+    //   minutes: finalMinutes,
+    //   seconds: finalSeconds,
+    // } = CountdownComponent({
+    //   days,
+    //   hours,
+    //   minutes,
+    //   seconds,
+    // });
 
-    const final = `${finalDays ? `${finalDays}d` : ""} ${
-      finalHours ? `${finalHours}h` : ""
-    } ${finalMinutes ? `${finalMinutes}m` : ""} ${
-      !finalDays && finalSeconds ? `${finalSeconds}s` : ""
-    }`;
+    const final = `${days ? `${days}d` : ""} ${hours ? `${hours}h` : ""} ${
+      minutes ? `${minutes}m` : ""
+    } ${!days && seconds ? `${seconds}s` : ""}`;
 
     return (
       <div className="flex items-end gap-2">
