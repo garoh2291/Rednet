@@ -42,6 +42,7 @@ export const AuctionDetails: React.FC<AuctionDetailsProps> = ({ id }) => {
   return (
     <>
       <div className="flex gap-2 flex-wrap pt-3">
+        {/** @ts-ignore */}
         {(auction || []).items.map((item) => {
           return (
             <div
