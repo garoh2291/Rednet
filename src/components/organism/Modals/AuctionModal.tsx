@@ -26,6 +26,7 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
+import Info from "@/components/icons/Info";
 
 export const checkStartTime = (
   startDate: Date = new Date(),
@@ -197,21 +198,24 @@ const AuctionModal: React.FC<AuctionModalProps> = ({
                       </p>
                     ))
                   : null}
-                <div
-                  className="cursor-pointer relative w-[148px] h-[32px] border  border-[#D9D9D9] flex gap-2 items-center justify-center"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    fileRef?.current?.click();
-                  }}
-                >
-                  <Upload />
-                  <Input
-                    type="file"
-                    className="hidden"
-                    onChange={handleDocumentChange}
-                    ref={fileRef}
-                  />
-                  <p className="text-body font-normal">Upload photo</p>
+                <div className="flex items-center gap-1">
+                  <div
+                    className="cursor-pointer relative w-[148px] h-[32px] border  border-[#D9D9D9] flex gap-2 items-center justify-center"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      fileRef?.current?.click();
+                    }}
+                  >
+                    <Upload />
+                    <Input
+                      type="file"
+                      className="hidden"
+                      onChange={handleDocumentChange}
+                      ref={fileRef}
+                    />
+                    <p className="text-body font-normal">Upload photo</p>
+                  </div>
+                  <Info stroke="#6E7191" />
                 </div>
               </div>
             </div>

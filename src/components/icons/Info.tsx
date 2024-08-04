@@ -2,9 +2,9 @@ export default function Info(props: {
   fill?: string;
   width?: string;
   height?: string;
-  stoke?: string;
+  stroke?: string;
 }) {
-  const { fill = "none", ...restProps } = props;
+  const { fill = "none", stroke = "#2183D1", ...restProps } = props;
   return (
     <svg
       width="18"
@@ -17,19 +17,19 @@ export default function Info(props: {
         cx="9.00008"
         cy="8.99984"
         r="7.33333"
-        stroke="#2183D1"
+        stroke={stroke}
         strokeWidth="2"
       />
       <path
         d="M9 5.6665V8.99984"
-        stroke="#2183D1"
+        stroke={stroke}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M9 11.6665V11.9998"
-        stroke="#2183D1"
+        stroke={stroke}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

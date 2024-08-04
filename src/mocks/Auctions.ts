@@ -10,7 +10,7 @@ import tender9 from "@/assets/tender-9.jpeg";
 import tenderSub1 from "@/assets/tender-sub-1.jpeg";
 import tenderSub2 from "@/assets/tender-sub-2.jpeg";
 import tenderSub3 from "@/assets/tender-sub-3.jpeg";
-import avatar from "@/assets/avatar.png";
+import avatar from "@/assets/Avatar.png";
 
 export interface IAuctionItem {
   id: number;
@@ -52,6 +52,7 @@ export const AUCTION_MOCKS = [
         startDate: new Date("2024-08-03T21:00:00.000Z"),
         // end date is 1 hour after start date
         endDate: new Date("2024-08-05T22:00:00.000Z"),
+
         lastBid: 129,
         location: "Yerevan",
         description:

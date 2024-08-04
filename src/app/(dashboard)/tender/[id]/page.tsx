@@ -6,9 +6,13 @@ import { TenderDetails } from "./_components/TenderDetails";
 
 export default function SingleTender({
   params,
+  searchParams,
 }: {
   params: {
     id: string;
+  };
+  searchParams: {
+    selectedTender?: string;
   };
 }) {
   return (
@@ -26,7 +30,10 @@ export default function SingleTender({
               </Button>
             </Link>
           </div>
-          <TenderDetails id={params.id} />
+          <TenderDetails
+            id={params.id}
+            selectedTender={searchParams.selectedTender}
+          />
         </div>
       </div>
     </div>
